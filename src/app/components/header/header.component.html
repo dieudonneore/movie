@@ -1,0 +1,21 @@
+<div class="header alert-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 [routerLink]="['/home']" class="app-clickable">Movie Browser</h3>
+      </div>
+      <div class="col-md-8">
+        <form (submit)="getqueryTerm($event)">
+          <input
+            type="text"
+            name="queryTerm"
+            onfocus=""
+            [(ngModel)]="queryTerm"
+            placeholder="search movies..."
+            class="form-control"
+            >
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
